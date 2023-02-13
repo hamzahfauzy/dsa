@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH1=/home/strc8827
     - /bin/cp -a * $DEPLOYPATH1
-    - /bin/cp -a $DEPLOYPATH1/public $DEPLOYPATH1/public_html
+    - /bin/cp -a $DEPLOYPATH1/public/* $DEPLOYPATH1/public_html
