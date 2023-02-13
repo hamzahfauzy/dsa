@@ -95,20 +95,20 @@ foreach($total_penilai as $user)
         $hasil_ahp[$user->user_id][$p->id] = $rangking;
     }
 
-    foreach($penyakit as $p)
-    {
-        $sum_borda = array_sum($borda[$p->id]);
-        foreach($borda[$p->id] as $gejala_id => $skor)
-        {
-            $bobot = $skor/$sum_borda;
-            $db->update('gejala',[
-                'bobot' => $bobot,
-            ],[
-                'id' => $gejala_id
-            ]);
-        }
-    }
+}
 
+foreach($penyakit as $p)
+{
+    $sum_borda = array_sum($borda[$p->id]);
+    foreach($borda[$p->id] as $gejala_id => $skor)
+    {
+        $bobot = $skor/$sum_borda;
+        $db->update('gejala',[
+            'bobot' => $bobot,
+        ],[
+            'id' => $gejala_id
+        ]);
+    }
 }
 
 set_flash_msg(['success'=>'Pembobotan berhasil diproses!']);
