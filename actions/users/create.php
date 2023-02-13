@@ -6,9 +6,16 @@ $db   = new Database($conn);
 if(request() == 'POST')
 {
 
-    $_POST['users']['password'] = ['=','PASSWORD("'.$_POST['users']['password'].'")'];
+    $password = ['=','PASSWORD("'.$_POST['users']['password'].'")'];
+    unset($_POST['users']['password']);
 
     $user = $db->insert('users',$_POST['users']);
+    $db->update('users',[
+        'password' => $password
+    ],[
+        'id' => $user->id
+    ]);
+    
     $db->insert('user_roles',[
         'user_id' => $user->id,
         'role_id' => $_POST['role']
