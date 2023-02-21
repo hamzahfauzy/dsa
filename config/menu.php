@@ -8,6 +8,7 @@ return [
     'pilihan' => 'crud/index?table=pilihan',
     'pembobotan' => 'pembobotan/index',
     'penilaian' => 'crud/index?table=penilaian',
+    'testimoni' => 'crud/index?table=testimoni',
     'pengguna'  => 'users/index',
     'pengaturan' => 'application/index'
 ];

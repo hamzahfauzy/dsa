@@ -9,6 +9,7 @@ return [
     'hasil' => 'fas fa-cubes',
     'pembobotan' => 'fas fa-cubes',
     'penilaian' => 'fas fa-cubes',
+    'testimoni' => 'fas fa-cubes',
     'pengguna'  => 'fas fa-users',
     'pengaturan' => 'fas fa-cog'
 ];

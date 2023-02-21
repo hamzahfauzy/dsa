@@ -246,47 +246,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="testimonial-slide">
+                        <?php foreach($testimoni as $t): ?>
                         <div class="testimonial-single-slide">
                             <div class="testimonial-single-slide-img">
-                                <img src="<?=asset('assets-aqua/img/client1.png')?>" alt="" />
+                                <img src="<?=asset('assets/img/user-placeholder.png')?>" alt="" />
                                 <i class="fa fa-facebook"></i>
                             </div>
                             <div class="testimonial-single-slide-desc">
-                                <p>Aplikasi ini sangat membantu apakah saya mengalami stres dengan tingkatan tertentu
-                                </p>
+                                <p><?=nl2br($t->deskripsi)?></p>
+                                <br>
+                                <center>
+                                    - <i><?=$t->name?></i> -
+                                </center>
                             </div>
                         </div>
-                        <div class="testimonial-single-slide">
-                            <div class="testimonial-single-slide-img">
-                                <img src="<?=asset('assets-aqua/img/client2.png')?>" alt="" />
-                                <i class="fa fa-twitter"></i>
-                            </div>
-                            <div class="testimonial-single-slide-desc">
-                                <p>Aplikasi ini bagus dan coba lengkapi dengan solusi yang lebih detail mungkin akan
-                                    lebih baik</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-single-slide">
-                            <div class="testimonial-single-slide-img">
-                                <img src="<?=asset('assets-aqua/img/client1.png')?>" alt="" />
-                                <i class="fa fa-facebook"></i>
-                            </div>
-                            <div class="testimonial-single-slide-desc">
-                                <p>Dengan aplikasi ini kami sangat terbantu apakah kami mengalami tingkat stress parah
-                                    sehingga bisa dicegah</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-single-slide">
-                            <div class="testimonial-single-slide-img">
-                                <img src="<?=asset('assets-aqua/img/client2.png')?>" alt="" />
-                                <i class="fa fa-twitter"></i>
-                            </div>
-                            <div class="testimonial-single-slide-desc">
-                                <p>Kegiatan belajar mengajar disini didokumentasikan dan diberitahukan kepada para
-                                    orangtua apa saja yang harus dibekali esoknya, sangat membantu</p>
-                            </div>
-                        </div>
-
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>

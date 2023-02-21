@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Masuk</title>
+	<title>Lupa Password</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="<?=asset('assets-aqua/img/favicon.ico')?>" type="image/x-icon"/>
 
@@ -38,19 +38,13 @@
                         <center>
                             <img src="<?=routeTo('assets/img/main-logo.png')?>" width="150px" height="100px" alt="logo" style="object-fit:contain;">
                         </center>
-                        <div class="card-title text-center">DSA SISTEM</div>
-                        <div class="card-category text-center">Masukkan Username dan Password anda pada bidang di bawah ini.</div>
+                        <div class="card-title text-center">Lupa Password</div>
 
                         <form action="" method="post">
                             <div class="form-group">
-                                <label for="">Nama Pengguna</label>
-                                <input type="text" name="username" id="" class="form-control mb-2" placeholder="Nama Pengguna Disini...">
-                                <label for="">Kata Sandi</label>
-                                <input type="password" name="password" id="" class="form-control mb-2" placeholder="Kata Sandi Disini...">
-                                <button class="btn btn-primary btn-block btn-round">Masuk</button>
-                                <br>
-                                <center><a href="<?=routeTo('auth/forget-password')?>">Lupa Password</a></center><br>
-                                <center>Bukan Mahasiswa STMIK Royal ? <br>Klik <a href="<?=routeTo('auth/register')?>">Disini</a></center>
+                                <label for="">Email</label>
+                                <input type="text" name="email" id="" class="form-control mb-2" placeholder="Email Disini...">
+                                <button class="btn btn-primary btn-block btn-round">Reset Password</button>
                             </div>
                         </form>
                     </div>

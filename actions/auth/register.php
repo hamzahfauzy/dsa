@@ -14,6 +14,18 @@ if(request() == 'POST')
         'password' => ['=',"PASSWORD('$_POST[password]')"]
     ]);
 
+    $db->insert('mahasiswa',[
+        'user_id' => $user->id,
+        'nama' => $_POST['name'],
+        'email' => $_POST['email'],
+        'jenis_kelamin' => $_POST['jenis_kelamin'],
+        'alamat' => ' ',
+        'no_hp' => ' ',
+        'kelas' => ' ',
+        'is_active' => 'Y',
+        'status' => 0,
+    ]);
+
     $db->insert('user_roles',[
         'user_id' => $user->id,
         'role_id' => 2

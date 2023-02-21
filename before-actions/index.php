@@ -5,6 +5,7 @@ $route = get_route();
 if($route == 'index') return true;
 
 if($route == 'auth/register') return true;
+if($route == 'auth/forget-password') return true;
 
 if(startWith($route,'app/db-')) return true;
 

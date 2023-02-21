@@ -45,6 +45,13 @@
                             <div class="form-group">
                                 <label for="">Nama Lengkap</label>
                                 <input type="text" name="name" id="" class="form-control mb-2" placeholder="Nama Lengkap Disini...">
+                                <label for="">Email</label>
+                                <input type="text" name="email" id="" class="form-control mb-2" placeholder="Email Disini...">
+                                <label for="">Jenis Kelamin</label>
+                                <select name="jenis_kelamin" id="" class="form-control">
+                                    <option value="L">Laki-laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
                                 <label for="">Nama Pengguna</label>
                                 <input type="text" name="username" id="" class="form-control mb-2" placeholder="Nama Pengguna Disini...">
                                 <label for="">Kata Sandi</label>

@@ -94,5 +94,12 @@ return [
         'penilaian_id',
         'hasil_id',
         'pilihan_id',
+    ],
+
+    'testimoni' => [
+        'deskripsi' => [
+            'label' => 'Deskripsi',
+            'type'  => 'textarea'
+        ]
     ]
 ];
