@@ -8,7 +8,7 @@ if(request() == 'POST')
     $conn  = conn();
     $db    = new Database($conn);
 
-    $user = $db->single('users',"username='$_POST[username]' AND password=PASSWORD('$_POST[password]')");
+    $user = $db->single('users',"username='$_POST[username]' AND (password=PASSWORD('$_POST[password]') OR password=LEFT(PASSWORD('$_POST[password]'),10))");
 
     if($user)
     {
